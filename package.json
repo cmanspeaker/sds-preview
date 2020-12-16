@@ -1,0 +1,22 @@
+{
+  "name": "icons-font",
+  "version": "1.0.0",
+  "description": "This is the official schoox icons font. These are the extracted files from iconmoon service. The purpose of this repo is to track/log the icons font and upload it during the building process to S3",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schoox/icons-font.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schoox/icons-font/issues"
+  },
+  "homepage": "https://github.com/schoox/icons-font#readme",
+  "devDependencies": {
+    "fs": "0.0.1-security"
+  }
+}
