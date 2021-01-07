@@ -5,5 +5,5 @@ This is the official assets repo. Here we can add images and font/icon (iconmoon
 Demo urls: 
 -------------
 
+<p>https://assets.schoox.com/icons/style.css</p>
 <p>https://assets.schoox.com/images/schoox_icon.png</p>
-<p>https://assets.schoox.com/images/*</p>
