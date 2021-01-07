@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'schoox';
-  src:  url('icons/schoox.eot?3ifi5');
-  src:  url('icons/schoox.eot?3ifi5#iefix') format('embedded-opentype'),
-    url('icons/schoox.woff2?3ifi5') format('woff2'),
-    url('icons/schoox.ttf?3ifi5') format('truetype'),
-    url('icons/schoox.woff?3ifi5') format('woff'),
-    url('icons/schoox.svg?3ifi5#schoox') format('svg');
+  src:  url('./schoox.eot?3ifi5');
+  src:  url('./schoox.eot?3ifi5#iefix') format('embedded-opentype'),
+    url('./schoox.woff2?3ifi5') format('woff2'),
+    url('./schoox.ttf?3ifi5') format('truetype'),
+    url('./schoox.woff?3ifi5') format('woff'),
+    url('./schoox.svg?3ifi5#schoox') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
