@@ -1,5 +1,8 @@
 // load fs
 const fs = require("fs");
+fs.renameSync('./schoox/.style.css', './schoox/style.css', function(err) {
+    if ( err ) console.log('ERROR: ' + err);
+});
 // read the file
 var content = (fs.readFileSync("./schoox/style.css")).toString();
 // print it
