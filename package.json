@@ -19,6 +19,6 @@
   "homepage": "https://github.com/schoox/icons-font#readme",
   "devDependencies": {
     "fs": "0.0.1-security",
-    "minify": "^6.0.1"
+    "minify": "^7.0.1"
   }
 }
