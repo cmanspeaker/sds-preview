@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'schoox';
-  src:  url('fonts/schoox.eot?lpu4ih');
-  src:  url('fonts/schoox.eot?lpu4ih#iefix') format('embedded-opentype'),
-    url('fonts/schoox.woff2?lpu4ih') format('woff2'),
-    url('fonts/schoox.ttf?lpu4ih') format('truetype'),
-    url('fonts/schoox.woff?lpu4ih') format('woff'),
-    url('fonts/schoox.svg?lpu4ih#schoox') format('svg');
+  src:  url('fonts/schoox.eot?pncia2');
+  src:  url('fonts/schoox.eot?pncia2#iefix') format('embedded-opentype'),
+    url('fonts/schoox.woff2?pncia2') format('woff2'),
+    url('fonts/schoox.ttf?pncia2') format('truetype'),
+    url('fonts/schoox.woff?pncia2') format('woff'),
+    url('fonts/schoox.svg?pncia2#schoox') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.schoox-trash:before {
+  content: "\e952";
+}
 .schoox-support_center:before {
   content: "\ea11";
 }
@@ -580,9 +583,6 @@
 }
 .schoox-free_trial_play_around:before {
   content: "\e951";
-}
-.schoox-free_trial_go_live:before {
-  content: "\e952";
 }
 .schoox-logo:before {
   content: "\e9f3";
