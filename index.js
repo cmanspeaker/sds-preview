@@ -16,7 +16,11 @@ while ((m = regex.exec(content)) !== null) {
     }
     icons.push(m[1]);
 }
-fs.writeFile("./schoox/icons.json", JSON.stringify(icons), function(err) {
+let file = `{
+    "icons": ${JSON.stringify(icons)}
+}
+`
+fs.writeFile("./schoox/icons.json", file, function(err) {
     if(err) {
         return console.log(err);
     }
