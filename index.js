@@ -75,4 +75,3 @@ fs.writeFile("./dist/general/icons.json", file, function(err) {
     }
     console.log("The file was saved!");
 });
-
