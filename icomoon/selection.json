@@ -128,7 +128,7 @@
         {}
       ],
       "properties": {
-        "order": 643,
+        "order": 669,
         "id": 284,
         "name": "trash",
         "prevSize": 64,
@@ -6747,7 +6747,7 @@
         {}
       ],
       "properties": {
-        "order": 647,
+        "order": 667,
         "id": 64,
         "name": "remove",
         "prevSize": 64,
@@ -8216,7 +8216,7 @@
         {}
       ],
       "properties": {
-        "order": 555,
+        "order": 668,
         "id": 71,
         "name": "delete_subcategory",
         "prevSize": 64,
