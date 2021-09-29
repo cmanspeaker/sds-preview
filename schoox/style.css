@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'schoox';
-  src:  url('fonts/schoox.eot?85rn8r');
-  src:  url('fonts/schoox.eot?85rn8r#iefix') format('embedded-opentype'),
-    url('fonts/schoox.woff2?85rn8r') format('woff2'),
-    url('fonts/schoox.ttf?85rn8r') format('truetype'),
-    url('fonts/schoox.woff?85rn8r') format('woff'),
-    url('fonts/schoox.svg?85rn8r#schoox') format('svg');
+  src:  url('fonts/schoox.eot?vhe4qh');
+  src:  url('fonts/schoox.eot?vhe4qh#iefix') format('embedded-opentype'),
+    url('fonts/schoox.woff2?vhe4qh') format('woff2'),
+    url('fonts/schoox.ttf?vhe4qh') format('truetype'),
+    url('fonts/schoox.woff?vhe4qh') format('woff'),
+    url('fonts/schoox.svg?vhe4qh#schoox') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.schoox-arrow_left_new:before {
+  content: "\ea1a";
+}
+.schoox-arrow_right_new:before {
+  content: "\ea1b";
+}
+.schoox-arrow_up_new:before {
+  content: "\ea1c";
+}
+.schoox-arrow_down_new:before {
+  content: "\ea1d";
+}
+.schoox-collapse:before {
+  content: "\ea18";
+}
+.schoox-expand:before {
+  content: "\ea19";
+}
+.schoox-qr_code:before {
+  content: "\ea17";
+}
+.schoox-warning:before {
+  content: "\ea16";
+}
 .schoox-versions:before {
   content: "\ea14";
 }
@@ -592,6 +616,9 @@
 }
 .schoox-free_trial_play_around:before {
   content: "\e951";
+}
+.schoox-free_trial_go_live:before {
+  content: "\ea15";
 }
 .schoox-logo:before {
   content: "\e9f3";
