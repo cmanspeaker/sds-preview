@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'schoox';
-  src:  url('fonts/schoox.eot?njtc5t');
-  src:  url('fonts/schoox.eot?njtc5t#iefix') format('embedded-opentype'),
-    url('fonts/schoox.woff2?njtc5t') format('woff2'),
-    url('fonts/schoox.ttf?njtc5t') format('truetype'),
-    url('fonts/schoox.woff?njtc5t') format('woff'),
-    url('fonts/schoox.svg?njtc5t#schoox') format('svg');
+  src:  url('fonts/schoox.eot?780nhh');
+  src:  url('fonts/schoox.eot?780nhh#iefix') format('embedded-opentype'),
+    url('fonts/schoox.woff2?780nhh') format('woff2'),
+    url('fonts/schoox.ttf?780nhh') format('truetype'),
+    url('fonts/schoox.woff?780nhh') format('woff'),
+    url('fonts/schoox.svg?780nhh#schoox') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,14 +26,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.schoox-list_sort_desc:before {
+  content: "\ea2b";
+}
+.schoox-list_sort_asc:before {
+  content: "\ea2c";
+}
+.schoox-non_visible:before {
+  content: "\ea2a";
+}
+.schoox-notification_bell:before {
+  content: "\ea28";
+}
 .schoox-announcements_new:before {
   content: "\ea26";
 }
 .schoox-announcements_high_priority_new:before {
   content: "\ea27";
-}
-.schoox-notification_bell:before {
-  content: "\ea28";
 }
 .schoox-create_event:before {
   content: "\ea29";
