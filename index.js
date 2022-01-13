@@ -50,6 +50,7 @@ createFolder('./dist/general');
 copyFileSync('./schoox/.style.css', './dist/icons/style.css');
 copyFolderRecursiveSync('./schoox/fonts/', './dist/icons');
 copyFolderRecursiveSync('./images/', './dist');
+copyFolderRecursiveSync('./schoox/', './dist/general');
 
 
 // read the file
