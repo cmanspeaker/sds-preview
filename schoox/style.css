@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'schoox';
-  src:  url('fonts/schoox.eot?mdhulz');
-  src:  url('fonts/schoox.eot?mdhulz#iefix') format('embedded-opentype'),
-    url('fonts/schoox.woff2?mdhulz') format('woff2'),
-    url('fonts/schoox.ttf?mdhulz') format('truetype'),
-    url('fonts/schoox.woff?mdhulz') format('woff'),
-    url('fonts/schoox.svg?mdhulz#schoox') format('svg');
+  src:  url('fonts/schoox.eot?4kud1l');
+  src:  url('fonts/schoox.eot?4kud1l#iefix') format('embedded-opentype'),
+    url('fonts/schoox.woff2?4kud1l') format('woff2'),
+    url('fonts/schoox.ttf?4kud1l') format('truetype'),
+    url('fonts/schoox.woff?4kud1l') format('woff'),
+    url('fonts/schoox.svg?4kud1l#schoox') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.schoox-check_circle_outline:before {
+  content: "\ea2f";
+}
+.schoox-no_answer_outline:before {
+  content: "\ea30";
+}
+.schoox-no_answer:before {
+  content: "\ea31";
+}
+.schoox-add_coaching:before {
+  content: "\ea32";
+}
+.schoox-private_outline:before {
+  content: "\ea33";
+}
 .schoox-add_video2:before {
   content: "\e94c";
 }
