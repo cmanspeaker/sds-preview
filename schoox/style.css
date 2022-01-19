@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'schoox';
-  src:  url('fonts/schoox.eot?4kud1l');
-  src:  url('fonts/schoox.eot?4kud1l#iefix') format('embedded-opentype'),
-    url('fonts/schoox.woff2?4kud1l') format('woff2'),
-    url('fonts/schoox.ttf?4kud1l') format('truetype'),
-    url('fonts/schoox.woff?4kud1l') format('woff'),
-    url('fonts/schoox.svg?4kud1l#schoox') format('svg');
+  src:  url('fonts/schoox.eot?76lvmc');
+  src:  url('fonts/schoox.eot?76lvmc#iefix') format('embedded-opentype'),
+    url('fonts/schoox.woff2?76lvmc') format('woff2'),
+    url('fonts/schoox.ttf?76lvmc') format('truetype'),
+    url('fonts/schoox.woff?76lvmc') format('woff'),
+    url('fonts/schoox.svg?76lvmc#schoox') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.schoox-empty:before {
+  content: "\ea34";
+}
 .schoox-check_circle_outline:before {
   content: "\ea2f";
 }
