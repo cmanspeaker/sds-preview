@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'schoox';
-  src:  url('fonts/schoox.eot?76lvmc');
-  src:  url('fonts/schoox.eot?76lvmc#iefix') format('embedded-opentype'),
-    url('fonts/schoox.woff2?76lvmc') format('woff2'),
-    url('fonts/schoox.ttf?76lvmc') format('truetype'),
-    url('fonts/schoox.woff?76lvmc') format('woff'),
-    url('fonts/schoox.svg?76lvmc#schoox') format('svg');
+  src:  url('fonts/schoox.eot?jn2xrc');
+  src:  url('fonts/schoox.eot?jn2xrc#iefix') format('embedded-opentype'),
+    url('fonts/schoox.woff2?jn2xrc') format('woff2'),
+    url('fonts/schoox.ttf?jn2xrc') format('truetype'),
+    url('fonts/schoox.woff?jn2xrc') format('woff'),
+    url('fonts/schoox.svg?jn2xrc#schoox') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.schoox-coach:before {
+  content: "\ea35";
+}
 .schoox-empty:before {
   content: "\ea34";
 }
