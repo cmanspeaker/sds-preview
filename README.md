@@ -9,3 +9,5 @@ Demo urls:
 <p>https://assets.schoox.com/icons/cl-icons-font.css</p>
 <p>https://assets.schoox.com/images/schoox_icon.png</p>
 <p>https://assets.schoox.com/general/schoox/demo.html</p>
+<p>https://assets.schoox.com/css/main.css</p>
+<p>https://assets.schoox.com/css/main.min.css</p>

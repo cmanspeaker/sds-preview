@@ -1,0 +1,20 @@
+// Context Mapping the Design Tokens
+// $color-context: (
+//   brand: (
+//     primary:             var(--blue-base),
+//     secondary:           var(--green-base),
+//     tertiary:            var(--black)
+//   ),
+//   utility: (
+//     base:                var(--blue-base),
+//     danger:              var(--red-base), 
+//     warning:             var(--yellow-base),
+//     success:             var(--green-base),
+//     info:                var(--blue-base)
+//   )
+// );
+
+// @function color($primary, $shade: base) {
+//   $color: map-get(map-get($color-context, $primary), $shade);
+//   @return $color;
+// }

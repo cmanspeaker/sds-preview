@@ -1,0 +1,22 @@
+// Import Global Styles
+@import "reset";
+@import "design-tokens";
+@import "core/color";
+
+.feather-16 {
+    height: 16px;
+    width: 16px;
+    margin-right: 8px;
+}
+
+.feather-24 {
+    height: 24px;
+    width: 24px;
+    margin-right: 12px;
+}
+
+.feather-32 {
+    height: 32px;
+    width: 32px;
+    margin-right: 16px;
+}

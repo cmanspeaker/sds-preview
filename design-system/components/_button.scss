@@ -1,0 +1,83 @@
+// Design Token Mapping to the Button Component
+$buttons: (
+  base: (
+    radius:       $radius-sm,
+    space-x:      $spacer-3,
+    space-y:      $spacer-1,
+    font:         $button-font,
+    border:       unset,
+    animation:    $transition
+  ),
+  primary: (
+    //Default State
+    // bkgd:         color(brand, primary),
+    bkgd:         var(--red-darker),
+    border-color: unset,
+    border:       unset,
+    color:        var(--black),
+    //Hover State
+    bkgd-hover:   color(brand, primary-accent2),
+    border-hover: unset,
+    color-hover:  var(--white)
+  ),
+  secondary: (
+    //Default State
+    bkgd:         transparent,
+    border-color: color(brand, secondary),
+    border:       color(brand, secondary),
+    color:        color(brand, secondary),
+    //Hover State
+    bkgd-hover:   var(--white),
+    border-hover: color(brand, secondary-accent1),
+    color-hover:  color(brand, secondary-accent1)
+  ),
+  tertiary: (
+    //Default State
+    bkgd:         color(brand, tertiary),
+    border-color: unset,
+    border:       unset,
+    color:        var(--white),
+    //Hover State
+    bkgd-hover:   color(brand, tertiary-accent1),
+    border-hover: unset,
+    color-hover:  var(--white)
+  ),
+  success: (
+    //Default State
+    bkgd:         color(utility, success),
+    border-color: unset,
+    border:       unset,
+    color:        var(--white),
+    //Hover State
+    bkgd-hover:   color(utility, success-accent1),
+    border-hover: unset,
+    color-hover:  var(--white)
+  ),
+  warning: (
+    //Default State
+    bkgd:         color(utility, warning),
+    border-color: unset,
+    border:       unset,
+    color:        var(--white),
+    //Hover State
+    bkgd-hover:   color(utility, warning-accent1),
+    border-hover: unset,
+    color-hover:  var(--white)
+  ),
+  danger: (
+    //Default State
+    bkgd:         color(utility, danger),
+    border-color: unset,
+    border:       unset,
+    color:        var(--white),
+    //Hover State
+    bkgd-hover:   color(utility, danger-accent1),
+    border-hover: unset,
+    color-hover:  var(--white)
+  )
+);
+
+@function button($base, $shade: color) {
+  $button: map-get(map-get($buttons, $base), $shade);
+  @return $button;
+}

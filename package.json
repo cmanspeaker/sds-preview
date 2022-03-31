@@ -4,8 +4,9 @@
   "description": "This is the official schoox icons font. These are the extracted files from iconmoon service. The purpose of this repo is to track/log the icons font and upload it during the building process to S3",
   "main": "index.js",
   "scripts": {
-    "build": "npm run minify && node index.js",
-    "minify": "minify schoox/style.css > schoox/.style.css"
+    "build": "npm run design-system && npm run minify && node index.js",
+    "minify": "minify schoox/style.css > schoox/.style.css && minify design-system/main.css > design-system/main.min.css",
+    "design-system": "node-sass design-system/main.scss design-system/main.css"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/schoox/icons-font#readme",
   "devDependencies": {
     "fs": "0.0.1-security",
-    "minify": "^7.0.1"
+    "minify": "^7.0.1",
+    "node-sass": "^7.0.1"
   }
 }
