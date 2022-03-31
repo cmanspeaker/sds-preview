@@ -1,0 +1,982 @@
+@font-face {
+  font-family: 'schoox';
+  src:  url('fonts/schoox.eot?jiqu78');
+  src:  url('fonts/schoox.eot?jiqu78#iefix') format('embedded-opentype'),
+    url('fonts/schoox.woff2?jiqu78') format('woff2'),
+    url('fonts/schoox.ttf?jiqu78') format('truetype'),
+    url('fonts/schoox.woff?jiqu78') format('woff'),
+    url('fonts/schoox.svg?jiqu78#schoox') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.schoox {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'schoox' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.schoox-image:before {
+  content: "\ea3b";
+}
+.schoox-invite_user:before {
+  content: "\ea3c";
+}
+.schoox-copy_event:before {
+  content: "\ea3d";
+}
+.schoox-kpi:before {
+  content: "\ea39";
+}
+.schoox-employee_about:before {
+  content: "\ea3a";
+}
+.schoox-add_to_pool:before {
+  content: "\ea38";
+}
+.schoox-credits:before {
+  content: "\ea37";
+}
+.schoox-search_details:before {
+  content: "\ea36";
+}
+.schoox-coach:before {
+  content: "\ea35";
+}
+.schoox-empty:before {
+  content: "\ea34";
+}
+.schoox-check_circle_outline:before {
+  content: "\ea2f";
+}
+.schoox-no_answer_outline:before {
+  content: "\ea30";
+}
+.schoox-no_answer:before {
+  content: "\ea31";
+}
+.schoox-add_coaching:before {
+  content: "\ea32";
+}
+.schoox-private_outline:before {
+  content: "\ea33";
+}
+.schoox-add_video2:before {
+  content: "\e94c";
+}
+.schoox-coaching:before {
+  content: "\ea2d";
+}
+.schoox-list_sort_desc:before {
+  content: "\ea2b";
+}
+.schoox-list_sort_asc:before {
+  content: "\ea2c";
+}
+.schoox-non_visible:before {
+  content: "\ea2a";
+}
+.schoox-notification_bell:before {
+  content: "\ea28";
+}
+.schoox-announcements_new:before {
+  content: "\ea26";
+}
+.schoox-announcements_high_priority_new:before {
+  content: "\ea27";
+}
+.schoox-create_event:before {
+  content: "\ea29";
+}
+.schoox-half_circle:before {
+  content: "\ea24";
+}
+.schoox-check_circle:before {
+  content: "\ea25";
+}
+.schoox-change_owner:before {
+  content: "\ea23";
+}
+.schoox-hand_dislike:before {
+  content: "\ea21";
+}
+.schoox-hand_like:before {
+  content: "\ea22";
+}
+.schoox-tags:before {
+  content: "\ea20";
+}
+.schoox-pin:before {
+  content: "\ea1e";
+}
+.schoox-unpin:before {
+  content: "\ea1f";
+}
+.schoox-arrow_left_new:before {
+  content: "\ea1a";
+}
+.schoox-arrow_right_new:before {
+  content: "\ea1b";
+}
+.schoox-arrow_up_new:before {
+  content: "\ea1c";
+}
+.schoox-arrow_down_new:before {
+  content: "\ea1d";
+}
+.schoox-collapse:before {
+  content: "\ea18";
+}
+.schoox-expand:before {
+  content: "\ea19";
+}
+.schoox-qr_code:before {
+  content: "\ea17";
+}
+.schoox-warning:before {
+  content: "\ea16";
+}
+.schoox-versions:before {
+  content: "\ea14";
+}
+.schoox-accessibility_feedback:before {
+  content: "\ea13";
+}
+.schoox-group_leave:before {
+  content: "\ea12";
+}
+.schoox-trash:before {
+  content: "\e952";
+}
+.schoox-support_center:before {
+  content: "\ea11";
+}
+.schoox-goal_tasks:before {
+  content: "\ea10";
+}
+.schoox-latest_content:before {
+  content: "\ea0f";
+}
+.schoox-on_the_job_training_create:before {
+  content: "\ea0e";
+}
+.schoox-delete_image:before {
+  content: "\ea0d";
+}
+.schoox-more_arrow_down:before {
+  content: "\ea0a";
+}
+.schoox-share:before {
+  content: "\ea0b";
+}
+.schoox-save:before {
+  content: "\ea0c";
+}
+.schoox-chart:before {
+  content: "\ea09";
+}
+.schoox-export_pdf:before {
+  content: "\ea08";
+}
+.schoox-edit_badge:before {
+  content: "\ea07";
+}
+.schoox-course_delete:before {
+  content: "\ea06";
+}
+.schoox-add_content:before {
+  content: "\ea04";
+}
+.schoox-delete_content:before {
+  content: "\ea05";
+}
+.schoox-delete_url:before {
+  content: "\ea01";
+}
+.schoox-add_url:before {
+  content: "\ea02";
+}
+.schoox-url:before {
+  content: "\ea03";
+}
+.schoox-enrolled_course:before {
+  content: "\e9fd";
+}
+.schoox-invite_academy:before {
+  content: "\e9fe";
+}
+.schoox-invite_group:before {
+  content: "\e9ff";
+}
+.schoox-files_converted:before {
+  content: "\ea00";
+}
+.schoox-course_update_file_title:before {
+  content: "\e9fb";
+}
+.schoox-course_update_file_description:before {
+  content: "\e9fc";
+}
+.schoox-on_the_job_training_pools:before {
+  content: "\e9f9";
+}
+.schoox-globe-time_zone:before {
+  content: "\e9f8";
+}
+.schoox-light_bulb2:before {
+  content: "\e9f2";
+}
+.schoox-help_center-light_bulb:before {
+  content: "\e9f4";
+}
+.schoox-show_me_how-compas:before {
+  content: "\e9f5";
+}
+.schoox-video2:before {
+  content: "\e9f6";
+}
+.schoox-contact_support:before {
+  content: "\e9f7";
+}
+.schoox-community_builder:before {
+  content: "\e9eb";
+}
+.schoox-influencer:before {
+  content: "\e9ec";
+}
+.schoox-team_builder:before {
+  content: "\e9ed";
+}
+.schoox-social_folk:before {
+  content: "\e9ee";
+}
+.schoox-collector:before {
+  content: "\e9ef";
+}
+.schoox-discoverer:before {
+  content: "\e9f0";
+}
+.schoox-contributor:before {
+  content: "\e9f1";
+}
+.schoox-arrow_right2:before {
+  content: "\e9ea";
+}
+.schoox-pause:before {
+  content: "\e9e9";
+}
+.schoox-automated_rules:before {
+  content: "\e9e8";
+}
+.schoox-location:before {
+  content: "\e9e7";
+}
+.schoox-promoted:before {
+  content: "\e9e6";
+}
+.schoox-retake_date:before {
+  content: "\e9e4";
+}
+.schoox-subtitles:before {
+  content: "\e9e5";
+}
+.schoox-popular_half:before {
+  content: "\e9e3";
+}
+.schoox-goal_contribution:before {
+  content: "\e9da";
+}
+.schoox-goal_create:before {
+  content: "\e9db";
+}
+.schoox-goal_delete:before {
+  content: "\e9dc";
+}
+.schoox-goal_personal:before {
+  content: "\e9dd";
+}
+.schoox-goal_edit:before {
+  content: "\e9de";
+}
+.schoox-goal_team:before {
+  content: "\e9df";
+}
+.schoox-goal_organasational:before {
+  content: "\e9e0";
+}
+.schoox-sorting_down_arrow:before {
+  content: "\e9e1";
+}
+.schoox-sorting_up_arrow:before {
+  content: "\e9e2";
+}
+.schoox-announcements:before {
+  content: "\e9d1";
+}
+.schoox-group:before {
+  content: "\e9d2";
+}
+.schoox-group-delete:before {
+  content: "\e9d3";
+}
+.schoox-group-edit:before {
+  content: "\e9d4";
+}
+.schoox-group-members:before {
+  content: "\e9d5";
+}
+.schoox-friends:before {
+  content: "\e9d6";
+}
+.schoox-group-create:before {
+  content: "\e9d7";
+}
+.schoox-group-public:before {
+  content: "\e9d8";
+}
+.schoox-your_feeds:before {
+  content: "\e9d9";
+}
+.schoox-add_user:before {
+  content: "\e9d0";
+}
+.schoox-feeds:before {
+  content: "\e9ce";
+}
+.schoox-course_video:before {
+  content: "\e9cf";
+}
+.schoox-moon:before {
+  content: "\e9cd";
+}
+.schoox-home:before {
+  content: "\e9cb";
+}
+.schoox-links:before {
+  content: "\e9cc";
+}
+.schoox-go_to:before {
+  content: "\e9c9";
+}
+.schoox-performance_reviews:before {
+  content: "\e9ca";
+}
+.schoox-item_pending_approval:before {
+  content: "\e9c8";
+}
+.schoox-accomplishments:before {
+  content: "\e9c4";
+}
+.schoox-knowledge_profile:before {
+  content: "\e9c5";
+}
+.schoox-learner:before {
+  content: "\e9c6";
+}
+.schoox-training:before {
+  content: "\e9c7";
+}
+.schoox-badge_icon_circle:before {
+  content: "\e9be";
+}
+.schoox-badge_icon_hexagon1:before {
+  content: "\e9bf";
+}
+.schoox-badge_icon_hexagon2:before {
+  content: "\e9c0";
+}
+.schoox-badge_icon_pentagon:before {
+  content: "\e9c1";
+}
+.schoox-badge_icon_rombus:before {
+  content: "\e9c2";
+}
+.schoox-badge_icon_square:before {
+  content: "\e9c3";
+}
+.schoox-certifications:before {
+  content: "\e9bd";
+}
+.schoox-professional_instructor:before {
+  content: "\e9ba";
+}
+.schoox-hr_manager:before {
+  content: "\e9b6";
+}
+.schoox-admin_delete:before {
+  content: "\e9b7";
+}
+.schoox-admin_add:before {
+  content: "\e9b8";
+}
+.schoox-training_manager:before {
+  content: "\e9b9";
+}
+.schoox-content_manager:before {
+  content: "\e9bb";
+}
+.schoox-hourly_worker:before {
+  content: "\e9bc";
+}
+.schoox-drag_handler:before {
+  content: "\e9b2";
+}
+.schoox-assign_multiple_courses:before {
+  content: "\e9b3";
+}
+.schoox-assign_multiple_plans:before {
+  content: "\e9b4";
+}
+.schoox-assign_training_plans:before {
+  content: "\e9b5";
+}
+.schoox-popular:before {
+  content: "\e9af";
+}
+.schoox-recent:before {
+  content: "\e9b0";
+}
+.schoox-shared_content:before {
+  content: "\e9b1";
+}
+.schoox-favorite:before {
+  content: "\e9ae";
+}
+.schoox-equivalent_events:before {
+  content: "\e9ad";
+}
+.schoox-gamification:before {
+  content: "\e9aa";
+}
+.schoox-exam_copy:before {
+  content: "\e9ac";
+}
+.schoox-exam_delete:before {
+  content: "\e9ab";
+}
+.schoox-go_next:before {
+  content: "\e9a9";
+}
+.schoox-section:before {
+  content: "\e9a7";
+}
+.schoox-section_add:before {
+  content: "\e9a8";
+}
+.schoox-prerequisites:before {
+  content: "\e9a6";
+}
+.schoox-export_json:before {
+  content: "\e9a3";
+}
+.schoox-export_excel:before {
+  content: "\e9a4";
+}
+.schoox-export_csv:before {
+  content: "\e9a5";
+}
+.schoox-delete_user:before {
+  content: "\e9a0";
+}
+.schoox-register_user:before {
+  content: "\e9a1";
+}
+.schoox-review:before {
+  content: "\e9a2";
+}
+.schoox-lecture:before {
+  content: "\e99f";
+}
+.schoox-facebook2_new:before {
+  content: "\e99e";
+}
+.schoox-third_party_login2:before {
+  content: "\e99a";
+}
+.schoox-hotschedules2:before {
+  content: "\e99b";
+}
+.schoox-ultipro2:before {
+  content: "\e99c";
+}
+.schoox-yammer2:before {
+  content: "\e99d";
+}
+.schoox-progress:before {
+  content: "\e998";
+}
+.schoox-completion_attempts:before {
+  content: "\e999";
+}
+.schoox-tools:before {
+  content: "\e993";
+}
+.schoox-stats:before {
+  content: "\e994";
+}
+.schoox-on_the_job_training_delete:before {
+  content: "\e992";
+}
+.schoox-total_checklist:before {
+  content: "\e990";
+}
+.schoox-total_tasks:before {
+  content: "\e991";
+}
+.schoox-checked:before {
+  content: "\e98c";
+}
+.schoox-not_checked:before {
+  content: "\e98d";
+}
+.schoox-on_the_job_training_edit:before {
+  content: "\e98e";
+}
+.schoox-on_the_job_training_info:before {
+  content: "\e98f";
+}
+.schoox-cfa_scorm:before {
+  content: "\e98b";
+}
+.schoox-send_invitation:before {
+  content: "\e98a";
+}
+.schoox-steps_configurator:before {
+  content: "\e988";
+}
+.schoox-students-community:before {
+  content: "\e989";
+}
+.schoox-forward_arrow:before {
+  content: "\e985";
+}
+.schoox-signatures:before {
+  content: "\e986";
+}
+.schoox-polls:before {
+  content: "\e987";
+}
+.schoox-checkmark:before {
+  content: "\e983";
+}
+.schoox-forbidden:before {
+  content: "\e984";
+}
+.schoox-maximize_menu:before {
+  content: "\e981";
+}
+.schoox-minimize_menu:before {
+  content: "\e982";
+}
+.schoox-exam_success_rate:before {
+  content: "\e97e";
+}
+.schoox-course_completion_rate:before {
+  content: "\e97f";
+}
+.schoox-waiting_list:before {
+  content: "\e980";
+}
+.schoox-vignette_success_rate:before {
+  content: "\e97d";
+}
+.schoox-delete_vignette:before {
+  content: "\e97b";
+}
+.schoox-copy_vignette:before {
+  content: "\e97c";
+}
+.schoox-quick_tools:before {
+  content: "\e97a";
+}
+.schoox-goal_management:before {
+  content: "\e979";
+}
+.schoox-career:before {
+  content: "\e95f";
+}
+.schoox-compare:before {
+  content: "\e976";
+}
+.schoox-on_the_job_training:before {
+  content: "\e977";
+}
+.schoox-on_the_job_training1:before {
+  content: "\e9fa";
+}
+.schoox-move:before {
+  content: "\e975";
+}
+.schoox-audio-sound:before {
+  content: "\e974";
+}
+.schoox-rd_party_login:before {
+  content: "\e973";
+}
+.schoox-vignette:before {
+  content: "\e957";
+}
+.schoox-websites:before {
+  content: "\e958";
+}
+.schoox-send_announcements:before {
+  content: "\e959";
+}
+.schoox-video:before {
+  content: "\e95a";
+}
+.schoox-sales:before {
+  content: "\e95b";
+}
+.schoox-scorm:before {
+  content: "\e95c";
+}
+.schoox-edit_vignette:before {
+  content: "\e95d";
+}
+.schoox-group_courses:before {
+  content: "\e95e";
+}
+.schoox-ppt:before {
+  content: "\e960";
+}
+.schoox-questions_pools:before {
+  content: "\e961";
+}
+.schoox-edit_questions:before {
+  content: "\e962";
+}
+.schoox-edit_lecture:before {
+  content: "\e963";
+}
+.schoox-edit_image:before {
+  content: "\e964";
+}
+.schoox-edit_curriculum_info:before {
+  content: "\e965";
+}
+.schoox-edit_course_exams:before {
+  content: "\e966";
+}
+.schoox-edit_course:before {
+  content: "\e967";
+}
+.schoox-documents-word-pdf:before {
+  content: "\e968";
+}
+.schoox-dashboard:before {
+  content: "\e969";
+}
+.schoox-create_new_vignette:before {
+  content: "\e96a";
+}
+.schoox-create_new_exam:before {
+  content: "\e96b";
+}
+.schoox-course_price:before {
+  content: "\e96c";
+}
+.schoox-content:before {
+  content: "\e96d";
+}
+.schoox-badge:before {
+  content: "\e96e";
+}
+.schoox-assign:before {
+  content: "\e96f";
+}
+.schoox-add_supplemental_material:before {
+  content: "\e970";
+}
+.schoox-add_exam:before {
+  content: "\e971";
+}
+.schoox-free_trial_understand_schoox:before {
+  content: "\e94e";
+}
+.schoox-free_trial_switch_roles:before {
+  content: "\e94f";
+}
+.schoox-free_trial_choose_org_structure:before {
+  content: "\e950";
+}
+.schoox-free_trial_play_around:before {
+  content: "\e951";
+}
+.schoox-free_trial_go_live:before {
+  content: "\ea15";
+}
+.schoox-logo:before {
+  content: "\e9f3";
+}
+.schoox-free_trial_need_assistance:before {
+  content: "\e953";
+}
+.schoox-free_trial_employee:before {
+  content: "\e954";
+}
+.schoox-free_trial_manager:before {
+  content: "\e955";
+}
+.schoox-free_trial_admin:before {
+  content: "\e956";
+}
+.schoox-copy2:before {
+  content: "\e94b";
+}
+.schoox-venue:before {
+  content: "\e94a";
+}
+.schoox-upload:before {
+  content: "\e948";
+}
+.schoox-download:before {
+  content: "\e949";
+}
+.schoox-announcements-message:before {
+  content: "\e945";
+}
+.schoox-assessments:before {
+  content: "\e946";
+}
+.schoox-onboarding:before {
+  content: "\e947";
+}
+.schoox-copy:before {
+  content: "\e944";
+}
+.schoox-bullet:before {
+  content: "\e940";
+}
+.schoox-gift:before {
+  content: "\e93f";
+}
+.schoox-locked:before {
+  content: "\e941";
+}
+.schoox-unlocked:before {
+  content: "\e93e";
+}
+.schoox-color_palette:before {
+  content: "\e93a";
+}
+.schoox-document:before {
+  content: "\e931";
+}
+.schoox-add_document:before {
+  content: "\e932";
+}
+.schoox-skill_assessment:before {
+  content: "\e933";
+}
+.schoox-add_skill_assessment:before {
+  content: "\e934";
+}
+.schoox-add_message:before {
+  content: "\e935";
+}
+.schoox-add_course:before {
+  content: "\e936";
+}
+.schoox-curriculum:before {
+  content: "\e938";
+}
+.schoox-add_curriculum:before {
+  content: "\e937";
+}
+.schoox-members_employees_users:before {
+  content: "\e92d";
+}
+.schoox-in_classes_training:before {
+  content: "\e92e";
+}
+.schoox-event:before {
+  content: "\e92f";
+}
+.schoox-events:before {
+  content: "\e978";
+}
+.schoox-events_multiple:before {
+  content: "\e930";
+}
+.schoox-archive:before {
+  content: "\e92b";
+}
+.schoox-unarchive:before {
+  content: "\e92c";
+}
+.schoox-remove:before {
+  content: "\e939";
+}
+.schoox-add:before {
+  content: "\e92a";
+}
+.schoox-info:before {
+  content: "\e929";
+}
+.schoox-assign_course:before {
+  content: "\e928";
+}
+.schoox-preview_button:before {
+  content: "\e923";
+}
+.schoox-decline_button:before {
+  content: "\e924";
+}
+.schoox-accepted_coupons:before {
+  content: "\e925";
+}
+.schoox-accept_button:before {
+  content: "\e926";
+}
+.schoox-coupons:before {
+  content: "\e927";
+}
+.schoox-twitter:before {
+  content: "\e91f";
+}
+.schoox-linkedin:before {
+  content: "\e921";
+}
+.schoox-facebook:before {
+  content: "\e922";
+}
+.schoox-hotschedules:before {
+  content: "\e93b";
+}
+.schoox-yammer:before {
+  content: "\e93c";
+}
+.schoox-facebook2:before {
+  content: "\e93d";
+}
+.schoox-exit_logout:before {
+  content: "\e91d";
+}
+.schoox-notifications:before {
+  content: "\e91c";
+}
+.schoox-settings:before {
+  content: "\e91e";
+}
+.schoox-frientship_request:before {
+  content: "\e920";
+}
+.schoox-category_quantity:before {
+  content: "\e918";
+}
+.schoox-date:before {
+  content: "\e919";
+}
+.schoox-payment_subscription_bassed:before {
+  content: "\e91a";
+}
+.schoox-payment_one_time_fee:before {
+  content: "\e91b";
+}
+.schoox-instructor:before {
+  content: "\e915";
+}
+.schoox-comment:before {
+  content: "\e916";
+}
+.schoox-inbox:before {
+  content: "\e917";
+}
+.schoox-zip_icon:before {
+  content: "\e914";
+}
+.schoox-suplemental_material:before {
+  content: "\e910";
+}
+.schoox-discussion_board:before {
+  content: "\e911";
+}
+.schoox-about:before {
+  content: "\e912";
+}
+.schoox-steps:before {
+  content: "\e913";
+}
+.schoox-help:before {
+  content: "\e903";
+}
+.schoox-velaki_back:before {
+  content: "\e904";
+}
+.schoox-arrow_down2:before {
+  content: "\e972";
+}
+.schoox-course:before {
+  content: "\e905";
+}
+.schoox-course_bundle:before {
+  content: "\e906";
+}
+.schoox-exam:before {
+  content: "\e907";
+}
+.schoox-in_class_training:before {
+  content: "\e908";
+}
+.schoox-live_session:before {
+  content: "\e909";
+}
+.schoox-ranking:before {
+  content: "\e90a";
+}
+.schoox-time:before {
+  content: "\e90b";
+}
+.schoox-time_assined-enrolled:before {
+  content: "\e995";
+}
+.schoox-due_date_expired:before {
+  content: "\e996";
+}
+.schoox-due_date:before {
+  content: "\e997";
+}
+.schoox-unit_store:before {
+  content: "\e90c";
+}
+.schoox-academies:before {
+  content: "\e90d";
+}
+.schoox-arrow_down:before {
+  content: "\e90e";
+}
+.schoox-arrow_up:before {
+  content: "\e90f";
+}
+.schoox-arrow_right:before {
+  content: "\ea2e";
+}
+.schoox-arrow_left:before {
+  content: "\e94d";
+}
+.schoox-visible:before {
+  content: "\e902";
+}
+.schoox-add_subcategory:before {
+  content: "\e942";
+}
+.schoox-edit:before {
+  content: "\e900";
+}
+.schoox-delete:before {
+  content: "\e901";
+}
+.schoox-delete_subcategory:before {
+  content: "\e943";
+}
