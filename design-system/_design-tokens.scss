@@ -59,10 +59,10 @@
     --pink-light: rgb(240, 194, 232);
     --pink-lighter: rgb(247, 222, 243);
     //COLOR CONTEXT 
-    --primary-bg: var(--blue-dark);
-    --secondary-bg: var(--green-dark);
-    --primary-text: var(--blue-lighter);
-    --secondary-text: var(--green-lighter);
+    --primary-dark: var(--blue-dark);
+    --secondary-dark: var(--green-dark);
+    --primary-light: var(--blue-lighter);
+    --secondary-light: var(--green-lighter);
 
     //SPACING
     --spacer-2: 0.2rem;

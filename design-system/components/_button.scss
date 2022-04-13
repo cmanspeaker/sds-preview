@@ -1,83 +1,114 @@
-// Design Token Mapping to the Button Component
-$buttons: (
-  base: (
-    radius:       $radius-sm,
-    space-x:      $spacer-3,
-    space-y:      $spacer-1,
-    font:         $button-font,
-    border:       unset,
-    animation:    $transition
-  ),
-  primary: (
-    //Default State
-    // bkgd:         color(brand, primary),
-    bkgd:         var(--red-darker),
-    border-color: unset,
-    border:       unset,
-    color:        var(--black),
-    //Hover State
-    bkgd-hover:   color(brand, primary-accent2),
-    border-hover: unset,
-    color-hover:  var(--white)
-  ),
-  secondary: (
-    //Default State
-    bkgd:         transparent,
-    border-color: color(brand, secondary),
-    border:       color(brand, secondary),
-    color:        color(brand, secondary),
-    //Hover State
-    bkgd-hover:   var(--white),
-    border-hover: color(brand, secondary-accent1),
-    color-hover:  color(brand, secondary-accent1)
-  ),
-  tertiary: (
-    //Default State
-    bkgd:         color(brand, tertiary),
-    border-color: unset,
-    border:       unset,
-    color:        var(--white),
-    //Hover State
-    bkgd-hover:   color(brand, tertiary-accent1),
-    border-hover: unset,
-    color-hover:  var(--white)
-  ),
-  success: (
-    //Default State
-    bkgd:         color(utility, success),
-    border-color: unset,
-    border:       unset,
-    color:        var(--white),
-    //Hover State
-    bkgd-hover:   color(utility, success-accent1),
-    border-hover: unset,
-    color-hover:  var(--white)
-  ),
-  warning: (
-    //Default State
-    bkgd:         color(utility, warning),
-    border-color: unset,
-    border:       unset,
-    color:        var(--white),
-    //Hover State
-    bkgd-hover:   color(utility, warning-accent1),
-    border-hover: unset,
-    color-hover:  var(--white)
-  ),
-  danger: (
-    //Default State
-    bkgd:         color(utility, danger),
-    border-color: unset,
-    border:       unset,
-    color:        var(--white),
-    //Hover State
-    bkgd-hover:   color(utility, danger-accent1),
-    border-hover: unset,
-    color-hover:  var(--white)
-  )
-);
+// @import "../../global/components/button";
 
-@function button($base, $shade: color) {
-  $button: map-get(map-get($buttons, $base), $shade);
-  @return $button;
+:host {
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  margin: 8px;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  letter-spacing: 0.15rem;
+  transition: 0.3s;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+  /** Colors **/
+  &.btn-primary {
+    background-color: var(--primary-dark);
+    color:  var(--white);
+    &:hover,
+    &:focus {
+      background-color: var(--primary-light);
+      color: var(--primary-dark);
+      //darken on hover
+    }
+    &:active {
+      background-color: #0b7de0;
+    }
+    &:disabled {
+      background-color: var(--neutral-light);
+      color: var(--neutral-base);
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+  }
+  &.btn-secondary {
+    background-color: var(--secondary-dark);
+    // border: none;
+    color:  var(--secondary-light);
+    // border: 1px solid #1b8df2;
+    &:hover,
+    &:focus {
+      background-color: var(--secondary-light);
+      color: var(--secondary-dark);
+    }
+
+    &:active {
+      background-color: #45a3f5;
+      color: #45a3f5;
+    }
+    &:disabled {
+      border-color: #d6d6d6;
+      color: #a3a3a3;
+      background-color: #f7f7f7;
+      cursor: not-allowed;
+    }
+  }
+  &.warning {
+    background-color: var(--warning-dark);
+    color:  var(--warning-light);
+    &:hover,
+    &:focus {
+      background-color: var(--warning-light);
+      color: var(--warning-dark);
+      //darken on hover
+    }
+    &:active {
+      background-color: #0b7de0;
+    }
+    &:disabled {
+      background-color: var(--neutral-light);
+      color: var(--neutral-base);
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+  }
+  /** Shape **/
+  &.rounded-lg {
+    border-radius: var(--br-16);
+  }
+  &.rounded-md {
+    border-radius: var(--br-8);
+  }
+  &.rounded-sm {
+    border-radius: var(--br-4);
+  }
+
+  /** Size **/
+  &.size-lg {
+    padding: var(--spacer-16) var(--spacer-40);
+    font-size: 1.8rem;
+  }
+  &.size-md {
+    padding: var(--spacer-8) var(--spacer-24);
+    font-size: 1.6rem;
+  }
+  &.size-sm {
+    padding: var(--spacer-8) var(--spacer-16);
+    font-size: 1.2rem;
+  }
+
+  /** Elevation **/
+  &.elevation {
+    box-shadow: 3px 4px 6px rgba(0, 0, 0, $alpha: 0.3);
+  }
 }
