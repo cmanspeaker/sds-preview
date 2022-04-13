@@ -5,3 +5,4 @@ design-system/main.css
 design-system/main.min.css
 .vscode/
 dist/general/schoox/index.html
+.DS_Store
