@@ -121,7 +121,6 @@ p, h1, h2, h3, h4, h5, h6 {
 .btn {
   display: inline-block;
   margin: 8px;
-  font-family: Helvetica, sans-serif;
   font-size: 1.6rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -192,6 +191,9 @@ p, h1, h2, h3, h4, h5, h6 {
     font-size: 1.2rem; }
   .btn.elevation {
     box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.3); }
+
+body {
+  font-family: "HelveticaNeueLTPro-UltLt"; }
 
 .feather-16 {
   height: 16px;
