@@ -1,0 +1,194 @@
+//-- Import the button style --//
+@import "../../../../style/cl-base-button.min";
+
+//-- Override button style --//
+.sds-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+ text-shadow: none;
+ white-space: normal;
+  height: auto; // We need this for multi line buttons.
+
+  //-- Default state --//
+  &.ant-btn-default:not([disabled]) {
+    color: var(--button-default-state-color);
+    background: var(--button-default-state-bg);
+    border-color: var(--button-default-state-border-color);
+    &:hover {
+      color: var(--button-default-state-hover-color);
+      background: var(--button-default-state-hover-bg);
+      border-color: var(--button-default-state-hover-border-color);
+    }
+  }
+
+  //-- Primary state --//
+  &.ant-btn-primary:not([disabled]) {
+    color: var(--button-primary-state-color);
+    background: var(--button-primary-state-bg);
+    border-color: var(--button-primary-state-border-color);
+    &:hover {
+      color: var(--button-primary-state-hover-color);
+      background: var(--button-primary-state-hover-bg);
+      border-color: var(--button-primary-state-hover-border-color);
+    }
+  }
+
+  //-- Black state --//
+  &.ant-btn-black:not([disabled]) {
+    color: var(--button-black-state-color);
+    background: var(--button-black-state-bg);
+    border-color:var(--button-black-state-border-color);
+    &:hover {
+      color: var(--button-black-state-hover-color);
+      background: var(--button-black-state-hover-bg);
+      border-color: var(--button-black-state-hover-border-color);
+    }
+  }
+
+  //-- Success state --//
+  &.ant-btn-success:not([disabled]) {
+    color: var(--button-success-state-color);
+    background: var(--button-success-state-bg);
+    border-color: var(--button-success-state-border-color);
+    &:hover {
+      color: var(--button-success-state-hover-color);
+      background: var(--button-success-state-hover-bg);
+      border-color: var(--button-success-state-hover-border-color);
+    }
+  }
+
+  //-- Dangerous state --//
+  &.ant-btn-danger:not([disabled]) {
+    color: var(--button-danger-state-color);
+    background: var(--button-danger-state-bg);
+    border-color: var(--button-danger-state-border-color);
+    &:hover {
+      color: var(--button-danger-state-hover-color);
+      background: var(--button-danger-state-hover-bg);
+      border-color: var(--button-danger-state-hover-border-color);
+    }
+  }
+
+  //-- Dashed state --//
+  &.ant-btn-dashed:not([disabled]) {
+    color: var(--button-dashed-state-color);
+    background: var(--button-dashed-state-bg);
+    border-color: var(--button-dashed-state-border-color);
+    &:hover {
+      color: var(--button-dashed-state-hover-color);
+      background: var(--button-dashed-state-hover-bg);
+      border-color: var(--button-dashed-state-hover-border-color);
+    }
+  }
+
+  //-- Text state --//
+  &.ant-btn-text:not([disabled]) {
+    color: var(--button-text-state-color);
+    background: var(--button-text-state-bg);
+    border-color: var(--button-text-state-border-color);
+    &:hover {
+        background: var(--button-text-state-hover-bg);
+    }
+  }
+
+  //-- Link state --//
+  &.ant-btn-link:not([disabled]) {
+    color: var(--button-link-state-color);
+    background: var(--button-link-state-bg);
+    border-color: var(--button-link-state-border-color);
+    &:hover {
+        color: var(--button-link-state-hover-color);
+    }
+  }
+
+  &[disabled] {
+    color: rgba(0, 0, 0, 0.25) !important; // This needs to be important as we manipulate the color with javascript.
+  }
+
+  //-- Block state --//
+  &.ant-btn-block {
+    width: 100%;
+  }
+
+  &.ant-btn-circle {
+    width: 32px;
+    height: 31px;
+    &.ant-btn-sm {
+      width: 24px;
+      height: 23px;
+    }
+    &.ant-btn-lg {
+      width: 40px;
+      height: 39px;
+    }
+  }
+
+  &:not(.ant-btn-circle):not(.ant-btn-round) {
+    border-radius: 4px;
+  }
+
+  &.ant-btn-loading {
+      i.schoox:not(.suffix-icon) {
+          display: none;
+      }
+  }
+
+  > .anticon + span {
+    margin-left: 0;
+  }
+
+  i {
+    width: 16px;
+    &.schoox {
+      font-size: 16px;
+      &.suffix-icon {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  span {
+    line-height: 21px; // Setting a line height for all three states(normal|small|large) is experimental at the moment. This is done by the multi line fix.
+    &:blank {
+      display: none;
+    }
+  }
+
+  &.ant-btn-sm {
+    font-size: 13px;
+    i {
+      width: 12px;
+      font-size: 12px;
+    }
+  }
+
+  &.ant-btn-lg {
+    i {
+        width: 18px;
+        font-size: 18px;
+    }
+  }
+}
+
+a.ant-btn {
+  span {
+    line-height: 23px; // Setting a line height for all three states(normal|small|large) is experimental at the moment. This is done by the multi line fix.
+  }
+}
+
+.ant-btn-group {
+  > .ant-btn:not(.ant-btn-circle):not(.ant-btn-round):not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+  > .ant-btn:first-child:not(:last-child),
+  > span:first-child:not(:last-child) > .ant-btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  > .ant-btn:last-child:not(:first-child),
+  > span:last-child:not(:first-child) > .ant-btn {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+}
