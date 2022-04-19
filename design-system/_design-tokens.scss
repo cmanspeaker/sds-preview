@@ -71,6 +71,18 @@
     --button-default-state-hover-fg: var(--purple-base);
     --button-default-state-hover-bg: var(--white);
     --button-default-state-hover-border-color: var(--purple-base);
+    --button-primary-state-fg: var(--purple-lighter);
+    --button-primary-state-bg: var(--purple-darker);
+    --button-primary-state-border-color: var(--purple-darker);
+    --button-primary-state-hover-fg: var(--purple-base);
+    --button-primary-state-hover-bg: var(--white);
+    --button-primary-state-hover-border-color: var(--purple-base);
+    --button-success-state-fg: var(--white);
+    --button-success-state-bg: var(--green-darker);
+    --button-success-state-border-color: var(--green-darker);
+    --button-success-state-hover-fg: var(--green-base);
+    --button-success-state-hover-bg: var(--white);
+    --button-success-state-hover-border-color: var(--green-base);
 
 
     //SPACING
@@ -83,6 +95,13 @@
     --spacer-32: 3.2rem;
     --spacer-40: 4.0rem;
     --spacer-48: 4.8rem;
+
+    //BORDER RADIUS
+    --border-radius-sm: 0.4rem;
+    --border-radius-md: 0.8rem;
+    --border-radius-lg: 1.6rem;
+    --border-radius-xl: 2.4rem;
+
 }
 
 

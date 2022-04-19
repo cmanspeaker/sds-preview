@@ -1,13 +1,14 @@
 //-- QUESTION Import the button style --//
 // @import "../../../../style/cl-base-button.min";
 .sds-btn {
-  line-height: 1.5715;
+    line-height: 1.5715;
     position: relative;
     display: inline-block;
-    font-weight: 400;
+    font-weight: bold;
     white-space: nowrap;
     text-align: center;
     background-image: none;
+    text-transform: uppercase;
     border: 1px solid transparent;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -16,9 +17,9 @@
     user-select: none;
     touch-action: manipulation;
     height: 32px;
-    padding: 4px 15px;
-    font-size: 14px;
-    border-radius: 2px;
+    padding: var(--spacer-8) var(--spacer-24);
+    font-size: 16px;
+    border-radius: var(--border-radius-sm);
     color: rgba(0, 0, 0, 0.85);
     background: #fff;
     border-color: #d9d9d9;
@@ -46,16 +47,16 @@
   }
 
   //-- Primary state --//
-  // &.sds-btn-primary:not([disabled]) {
-  //   color: var(--button-primary-state-color);
-  //   background: var(--button-primary-state-bg);
-  //   border-color: var(--button-primary-state-border-color);
-  //   &:hover {
-  //     color: var(--button-primary-state-hover-color);
-  //     background: var(--button-primary-state-hover-bg);
-  //     border-color: var(--button-primary-state-hover-border-color);
-  //   }
-  // }
+  &.sds-btn-primary:not([disabled]) {
+    color: var(--button-primary-state-fg);
+    background: var(--button-primary-state-bg);
+    border-color: var(--button-primary-state-border-color);
+    &:hover {
+      color: var(--button-primary-state-hover-fg);
+      background: var(--button-primary-state-hover-bg);
+      border-color: var(--button-primary-state-hover-border-color);
+    }
+  }
 
   //-- Black state --//
   // &.sds-btn-black:not([disabled]) {
@@ -70,16 +71,16 @@
   // }
 
   //-- Success state --//
-  // &.sds-btn-success:not([disabled]) {
-  //   color: var(--button-success-state-color);
-  //   background: var(--button-success-state-bg);
-  //   border-color: var(--button-success-state-border-color);
-  //   &:hover {
-  //     color: var(--button-success-state-hover-color);
-  //     background: var(--button-success-state-hover-bg);
-  //     border-color: var(--button-success-state-hover-border-color);
-  //   }
-  // }
+  &.sds-btn-success:not([disabled]) {
+    color: var(--button-success-state-fg);
+    background: var(--button-success-state-bg);
+    border-color: var(--button-success-state-border-color);
+    &:hover {
+      color: var(--button-success-state-hover-fg);
+      background: var(--button-success-state-hover-bg);
+      border-color: var(--button-success-state-hover-border-color);
+    }
+  }
 
   //-- Dangerous state --//
   // &.sds-btn-danger:not([disabled]) {
