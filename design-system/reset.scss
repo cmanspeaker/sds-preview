@@ -22,10 +22,26 @@
     4. Add accessible line-height
     5. Improve text rendering
   */
-  body {
-    line-height: 1.5;
+
+  html {
+    /* Load system fonts */
+    font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI,
+      Roboto, Helvetica Neue, sans-serif;
+  
+    /* Make type rendering look crisper */
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Deactivate auto-enlargement of small text in Safari */
+    text-size-adjust: 100%;
+  
+    /* Enable kerning and optional ligatures */
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
   }
+  
+  /**
+
   /*
     6. Improve media defaults
   */
@@ -33,12 +49,16 @@
     display: block;
     max-width: 100%;
   }
-  /*
-    7. Remove built-in form typography styles
+  /* Form elements render using OS defaults,
+  * so font-family inheritance must be specifically declared
   */
-  input, button, textarea, select {
-    font: inherit;
-  }
+ button,
+ input,
+ optgroup,
+ select,
+ textarea {
+   font-family: inherit;
+ }
   /*
     8. Avoid text overflows
   */
