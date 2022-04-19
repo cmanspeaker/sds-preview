@@ -1,113 +1,330 @@
-// @import "../../global/components/button";
-
-:host {
-  display: block;
+//-- QUESTION Import the button style --//
+// @import "../../../../style/cl-base-button.min";
+.sds-btn {
+  line-height: 1.5715;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    background-image: none;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    height: 32px;
+    padding: 4px 15px;
+    font-size: 14px;
+    border-radius: 2px;
+    color: rgba(0, 0, 0, 0.85);
+    background: #fff;
+    border-color: #d9d9d9;
 }
 
-.btn {
-  display: inline-block;
-  margin: 8px;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: bold;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  letter-spacing: 0.15rem;
-  transition: 0.3s;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+//-- Override button style --//
+.sds-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: none;
+  white-space: normal;
+  height: auto; // We need this for multi line buttons.
 
-  /** Colors **/
-  &.btn-primary {
-    background-color: var(--primary-dark);
-    color:  var(--white);
-    &:hover,
-    &:focus {
-      background-color: var(--primary-light);
-      color: var(--primary-dark);
-      //darken on hover
+  //-- Default state --//
+  &.sds-btn-default:not([disabled]) {
+    color: var(--button-default-state-fg);
+    background: var(--button-default-state-bg);
+    border-color: var(--button-default-state-border-color);
+    &:hover {
+      color: var(--button-default-state-hover-fg);
+      background: var(--button-default-state-hover-bg);
+      border-color: var(--button-default-state-hover-border-color);
     }
-    &:active {
-      background-color: #0b7de0;
-    }
-    &:disabled {
-      background-color: var(--neutral-light);
-      color: var(--neutral-base);
-      cursor: not-allowed;
-      box-shadow: none;
-    }
-  }
-  &.btn-secondary {
-    background-color: var(--secondary-dark);
-    // border: none;
-    color:  var(--secondary-light);
-    // border: 1px solid #1b8df2;
-    &:hover,
-    &:focus {
-      background-color: var(--secondary-light);
-      color: var(--secondary-dark);
-    }
-
-    &:active {
-      background-color: #45a3f5;
-      color: #45a3f5;
-    }
-    &:disabled {
-      border-color: #d6d6d6;
-      color: #a3a3a3;
-      background-color: #f7f7f7;
-      cursor: not-allowed;
-    }
-  }
-  &.warning {
-    background-color: var(--warning-dark);
-    color:  var(--warning-light);
-    &:hover,
-    &:focus {
-      background-color: var(--warning-light);
-      color: var(--warning-dark);
-      //darken on hover
-    }
-    &:active {
-      background-color: #0b7de0;
-    }
-    &:disabled {
-      background-color: var(--neutral-light);
-      color: var(--neutral-base);
-      cursor: not-allowed;
-      box-shadow: none;
-    }
-  }
-  /** Shape **/
-  &.rounded-lg {
-    border-radius: var(--br-16);
-  }
-  &.rounded-md {
-    border-radius: var(--br-8);
-  }
-  &.rounded-sm {
-    border-radius: var(--br-4);
   }
 
-  /** Size **/
-  &.size-lg {
-    padding: var(--spacer-16) var(--spacer-40);
-    font-size: 1.8rem;
-  }
-  &.size-md {
-    padding: var(--spacer-8) var(--spacer-24);
-    font-size: 1.6rem;
-  }
-  &.size-sm {
-    padding: var(--spacer-8) var(--spacer-16);
-    font-size: 1.2rem;
+  //-- Primary state --//
+  // &.sds-btn-primary:not([disabled]) {
+  //   color: var(--button-primary-state-color);
+  //   background: var(--button-primary-state-bg);
+  //   border-color: var(--button-primary-state-border-color);
+  //   &:hover {
+  //     color: var(--button-primary-state-hover-color);
+  //     background: var(--button-primary-state-hover-bg);
+  //     border-color: var(--button-primary-state-hover-border-color);
+  //   }
+  // }
+
+  //-- Black state --//
+  // &.sds-btn-black:not([disabled]) {
+  //   color: var(--button-black-state-color);
+  //   background: var(--button-black-state-bg);
+  //   border-color:var(--button-black-state-border-color);
+  //   &:hover {
+  //     color: var(--button-black-state-hover-color);
+  //     background: var(--button-black-state-hover-bg);
+  //     border-color: var(--button-black-state-hover-border-color);
+  //   }
+  // }
+
+  //-- Success state --//
+  // &.sds-btn-success:not([disabled]) {
+  //   color: var(--button-success-state-color);
+  //   background: var(--button-success-state-bg);
+  //   border-color: var(--button-success-state-border-color);
+  //   &:hover {
+  //     color: var(--button-success-state-hover-color);
+  //     background: var(--button-success-state-hover-bg);
+  //     border-color: var(--button-success-state-hover-border-color);
+  //   }
+  // }
+
+  //-- Dangerous state --//
+  // &.sds-btn-danger:not([disabled]) {
+  //   color: var(--button-danger-state-color);
+  //   background: var(--button-danger-state-bg);
+  //   border-color: var(--button-danger-state-border-color);
+  //   &:hover {
+  //     color: var(--button-danger-state-hover-color);
+  //     background: var(--button-danger-state-hover-bg);
+  //     border-color: var(--button-danger-state-hover-border-color);
+  //   }
+  // }
+
+  //-- Dashed state --//
+  // &.sds-btn-dashed:not([disabled]) {
+  //   color: var(--button-dashed-state-color);
+  //   background: var(--button-dashed-state-bg);
+  //   border-color: var(--button-dashed-state-border-color);
+  //   &:hover {
+  //     color: var(--button-dashed-state-hover-color);
+  //     background: var(--button-dashed-state-hover-bg);
+  //     border-color: var(--button-dashed-state-hover-border-color);
+  //   }
+  // }
+
+  //-- Text state --//
+  // &.sds-btn-text:not([disabled]) {
+  //   color: var(--button-text-state-color);
+  //   background: var(--button-text-state-bg);
+  //   border-color: var(--button-text-state-border-color);
+  //   &:hover {
+  //       background: var(--button-text-state-hover-bg);
+  //   }
+  // }
+
+  //-- Link state --//
+  // &.sds-btn-link:not([disabled]) {
+  //   color: var(--button-link-state-color);
+  //   background: var(--button-link-state-bg);
+  //   border-color: var(--button-link-state-border-color);
+  //   &:hover {
+  //       color: var(--button-link-state-hover-color);
+  //   }
+  // }
+
+  // &[disabled] {
+  //   color: rgba(0, 0, 0, 0.25) !importsds; // This needs to be importsds as we manipulate the color with javascript.
+  // }
+
+  //-- Block state --//
+  &.sds-btn-block {
+    width: 100%;
   }
 
-  /** Elevation **/
-  &.elevation {
-    box-shadow: 3px 4px 6px rgba(0, 0, 0, $alpha: 0.3);
+  &.sds-btn-circle {
+    width: 32px;
+    height: 31px;
+    &.sds-btn-sm {
+      width: 24px;
+      height: 23px;
+    }
+    &.sds-btn-lg {
+      width: 40px;
+      height: 39px;
+    }
+  }
+
+  &:not(.sds-btn-circle):not(.sds-btn-round) {
+    border-radius: 4px;
+  }
+
+  &.sds-btn-loading {
+      i.schoox:not(.suffix-icon) {
+          display: none;
+      }
+  }
+
+  > .sdsicon + span {
+    margin-left: 0;
+  }
+
+  i {
+    width: 16px;
+    &.schoox {
+      font-size: 16px;
+      &.suffix-icon {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  span {
+    line-height: 21px; // Setting a line height for all three states(normal|small|large) is experimental at the moment. This is done by the multi line fix.
+    &:blank {
+      display: none;
+    }
+    display: inline-block;
+  }
+
+  &.sds-btn-sm {
+    font-size: 13px;
+    i {
+      width: 12px;
+      font-size: 12px;
+    }
+  }
+
+  &.sds-btn-lg {
+    i {
+        width: 18px;
+        font-size: 18px;
+    }
   }
 }
+
+a.sds-btn {
+  span {
+    line-height: 23px; // Setting a line height for all three states(normal|small|large) is experimental at the moment. This is done by the multi line fix.
+  }
+}
+
+// .sds-btn-group {
+//   > .sds-btn:not(.sds-btn-circle):not(.sds-btn-round):not(:first-child):not(:last-child) {
+//     border-radius: 0;
+//   }
+//   > .sds-btn:first-child:not(:last-child),
+//   > span:first-child:not(:last-child) > .sds-btn {
+//     border-top-right-radius: 0;
+//     border-bottom-right-radius: 0;
+//   }
+//   > .sds-btn:last-child:not(:first-child),
+//   > span:last-child:not(:first-child) > .sds-btn {
+//     border-top-left-radius: 2px;
+//     border-bottom-left-radius: 2px;
+//   }
+// }
+
+// :host {
+//   display: block;
+// }
+
+// .btn {
+//   display: inline-block;
+//   margin: 8px;
+//   font-size: 1.6rem;
+//   text-transform: uppercase;
+//   text-decoration: none;
+//   font-weight: bold;
+//   cursor: pointer;
+//   border: none;
+//   outline: none;
+//   letter-spacing: 0.15rem;
+//   transition: 0.3s;
+//   // display: flex;
+//   // justify-content: center;
+//   // align-items: center;
+
+//   /** Colors **/
+//   &.btn-primary {
+//     background-color: var(--primary-dark);
+//     color:  var(--white);
+//     &:hover,
+//     &:focus {
+//       background-color: var(--primary-light);
+//       color: var(--primary-dark);
+//       //darken on hover
+//     }
+//     &:active {
+//       background-color: #0b7de0;
+//     }
+//     &:disabled {
+//       background-color: var(--neutral-light);
+//       color: var(--neutral-base);
+//       cursor: not-allowed;
+//       box-shadow: none;
+//     }
+//   }
+//   &.btn-secondary {
+//     background-color: var(--secondary-dark);
+//     // border: none;
+//     color:  var(--secondary-light);
+//     // border: 1px solid #1b8df2;
+//     &:hover,
+//     &:focus {
+//       background-color: var(--secondary-light);
+//       color: var(--secondary-dark);
+//     }
+
+//     &:active {
+//       background-color: #45a3f5;
+//       color: #45a3f5;
+//     }
+//     &:disabled {
+//       border-color: #d6d6d6;
+//       color: #a3a3a3;
+//       background-color: #f7f7f7;
+//       cursor: not-allowed;
+//     }
+//   }
+//   &.warning {
+//     background-color: var(--warning-dark);
+//     color:  var(--warning-light);
+//     &:hover,
+//     &:focus {
+//       background-color: var(--warning-light);
+//       color: var(--warning-dark);
+//       //darken on hover
+//     }
+//     &:active {
+//       background-color: #0b7de0;
+//     }
+//     &:disabled {
+//       background-color: var(--neutral-light);
+//       color: var(--neutral-base);
+//       cursor: not-allowed;
+//       box-shadow: none;
+//     }
+//   }
+//   /** Shape **/
+//   &.rounded-lg {
+//     border-radius: var(--br-16);
+//   }
+//   &.rounded-md {
+//     border-radius: var(--br-8);
+//   }
+//   &.rounded-sm {
+//     border-radius: var(--br-4);
+//   }
+
+//   /** Size **/
+//   &.size-lg {
+//     padding: var(--spacer-16) var(--spacer-40);
+//     font-size: 1.8rem;
+//   }
+//   &.size-md {
+//     padding: var(--spacer-8) var(--spacer-24);
+//     font-size: 1.6rem;
+//   }
+//   &.size-sm {
+//     padding: var(--spacer-8) var(--spacer-16);
+//     font-size: 1.2rem;
+//   }
+
+//   /** Elevation **/
+//   &.elevation {
+//     box-shadow: 3px 4px 6px rgba(0, 0, 0, $alpha: 0.3);
+//   }
+// }
