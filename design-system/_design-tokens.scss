@@ -59,10 +59,19 @@
     --pink-light: rgb(240, 194, 232);
     --pink-lighter: rgb(247, 222, 243);
     //COLOR CONTEXT 
-    --primary-dark: var(--blue-dark);
+    --primary-dark: var(--purple-dark);
+    --primary-light: var(--purple-lighter);
     --secondary-dark: var(--green-dark);
-    --primary-light: var(--blue-lighter);
     --secondary-light: var(--green-lighter);
+
+    // BUTTONS
+    --button-default-state-fg: var(--black);
+    --button-default-state-bg: var(--white);
+    --button-default-state-border-color: var(--neutral-base);
+    --button-default-state-hover-fg: var(--purple-base);
+    --button-default-state-hover-bg: var(--white);
+    --button-default-state-hover-border-color: var(--purple-base);
+
 
     //SPACING
     --spacer-2: 0.2rem;
