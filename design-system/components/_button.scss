@@ -10,7 +10,7 @@
     background-image: none;
     text-transform: uppercase;
     border: 1px solid transparent;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-base);
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     -webkit-user-select: none;
@@ -83,16 +83,16 @@
   }
 
   //-- Dangerous state --//
-  // &.sds-btn-danger:not([disabled]) {
-  //   color: var(--button-danger-state-color);
-  //   background: var(--button-danger-state-bg);
-  //   border-color: var(--button-danger-state-border-color);
-  //   &:hover {
-  //     color: var(--button-danger-state-hover-color);
-  //     background: var(--button-danger-state-hover-bg);
-  //     border-color: var(--button-danger-state-hover-border-color);
-  //   }
-  // }
+  &.sds-btn-danger:not([disabled]) {
+    color: var(--button-danger-state-fg);
+    background: var(--button-danger-state-bg);
+    border-color: var(--button-danger-state-border-color);
+    &:hover {
+      color: var(--button-danger-state-hover-fg);
+      background: var(--button-danger-state-hover-bg);
+      border-color: var(--button-danger-state-hover-border-color);
+    }
+  }
 
   //-- Dashed state --//
   // &.sds-btn-dashed:not([disabled]) {

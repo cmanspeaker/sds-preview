@@ -3,6 +3,10 @@
 @import "design-tokens";
 @import "components/button";
 
+body {
+    padding: 1rem;
+}
+
 .feather-16 {
     height: 16px;
     width: 16px;
