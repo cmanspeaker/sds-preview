@@ -65,33 +65,33 @@
     --secondary-light: var(--green-lighter);
 
     // BUTTONS
-    --button-default-state-fg: var(--black);
-    --button-default-state-bg: var(--white);
-    --button-default-state-border-color: var(--neutral-base);
-    --button-default-state-hover-fg: var(--purple-base);
-    --button-default-state-hover-bg: var(--white);
-    --button-default-state-hover-border-color: var(--purple-base);
+    --button-default-fg: var(--black);
+    --button-default-bg: var(--white);
+    --button-default-border-color: var(--neutral-base);
+    --button-default-hover-fg: var(--purple-base);
+    --button-default-hover-bg: var(--white);
+    --button-default-hover-border-color: var(--purple-base);
     //Primary
-    --button-primary-state-fg: var(--purple-lighter);
-    --button-primary-state-bg: var(--purple-darker);
-    --button-primary-state-border-color: var(--purple-darker);
-    --button-primary-state-hover-fg: var(--purple-base);
-    --button-primary-state-hover-bg: var(--white);
-    --button-primary-state-hover-border-color: var(--purple-base);
+    --button-primary-fg: var(--purple-lighter);
+    --button-primary-bg: var(--purple-darker);
+    --button-primary-border-color: var(--purple-darker);
+    --button-primary-hover-fg: var(--purple-base);
+    --button-primary-hover-bg: var(--white);
+    --button-primary-hover-border-color: var(--purple-base);
     //Success
-    --button-success-state-fg: var(--white);
-    --button-success-state-bg: var(--green-darker);
-    --button-success-state-border-color: var(--green-darker);
-    --button-success-state-hover-fg: var(--green-base);
-    --button-success-state-hover-bg: var(--white);
-    --button-success-state-hover-border-color: var(--green-base);
+    --button-success-fg: var(--white);
+    --button-success-bg: var(--green-darker);
+    --button-success-border-color: var(--green-darker);
+    --button-success-hover-fg: var(--green-light);
+    --button-success-hover-bg: var(--green-darker);
+    --button-success-hover-border-color: var(--green-lighter);
     //Danger
-    --button-danger-state-fg: var(--red-lighter);
-    --button-danger-state-bg: var(--red-darker);
-    --button-danger-state-border-color: var(--red-darker);
-    --button-danger-state-hover-fg: var(--red-base);
-    --button-danger-state-hover-bg: var(--white);
-    --button-danger-state-hover-border-color: var(--red-base);
+    --button-danger-fg: var(--red-lighter);
+    --button-danger-bg: var(--red-darker);
+    --button-danger-border-color: var(--red-darker);
+    --button-danger-hover-fg: var(--red-base);
+    --button-danger-hover-bg: var(--white);
+    --button-danger-hover-border-color: var(--red-base);
 
 
     //SPACING
@@ -118,6 +118,9 @@
     --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -4px rgba(0,0,0,0.1);
     --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1),0 8px 10px -6px rgba(0,0,0,0.1);
     --shadow-2xl: 0 25px 50px -12px rgba(0,0,0,0.25);
+
+    // --large-title: var(--display-large);
+    // --title-1: var(--display-medium);
 }
 
 
