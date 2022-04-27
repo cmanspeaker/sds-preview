@@ -11,6 +11,7 @@
     text-transform: uppercase;
     border: 1px solid transparent;
     box-shadow: var(--shadow-base);
+    letter-spacing: 0.5px;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     -webkit-user-select: none;
@@ -18,43 +19,43 @@
     touch-action: manipulation;
     height: 32px;
     padding: var(--spacer-8) var(--spacer-24);
-    font-size: 16px;
+    font-size: 14px;
     border-radius: var(--border-radius-sm);
     color: rgba(0, 0, 0, 0.85);
-    background: #fff;
-    border-color: #d9d9d9;
+    background: var(--white);
+    border-color: var(--neutral-lightest);
 }
 
 //-- Override button style --//
 .sds-btn {
   display: inline-flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-shadow: none;
   white-space: normal;
   height: auto; // We need this for multi line buttons.
 
   //-- Default state --//
   &.sds-btn-default:not([disabled]) {
-    color: var(--button-default-state-fg);
-    background: var(--button-default-state-bg);
-    border-color: var(--button-default-state-border-color);
+    color: var(--button-default-fg);
+    background: var(--button-default-bg);
+    border-color: var(--button-default-border-color);
     &:hover {
-      color: var(--button-default-state-hover-fg);
-      background: var(--button-default-state-hover-bg);
-      border-color: var(--button-default-state-hover-border-color);
+      color: var(--button-default-hover-fg);
+      background: var(--button-default-hover-bg);
+      border-color: var(--button-default-hover-border-color);
     }
   }
 
-  //-- Primary state --//
+  //-- Primary State --//
   &.sds-btn-primary:not([disabled]) {
-    color: var(--button-primary-state-fg);
-    background: var(--button-primary-state-bg);
-    border-color: var(--button-primary-state-border-color);
+    color: var(--button-primary-fg);
+    background: var(--button-primary-bg);
+    border-color: var(--button-primary-border-color);
     &:hover {
-      color: var(--button-primary-state-hover-fg);
-      background: var(--button-primary-state-hover-bg);
-      border-color: var(--button-primary-state-hover-border-color);
+      color: var(--button-primary-hover-fg);
+      background: var(--button-primary-hover-bg);
+      border-color: var(--button-primary-hover-border-color);
     }
   }
 
@@ -72,25 +73,25 @@
 
   //-- Success state --//
   &.sds-btn-success:not([disabled]) {
-    color: var(--button-success-state-fg);
-    background: var(--button-success-state-bg);
-    border-color: var(--button-success-state-border-color);
+    color: var(--button-success-fg);
+    background: var(--button-success-bg);
+    border-color: var(--button-success-border-color);
     &:hover {
-      color: var(--button-success-state-hover-fg);
-      background: var(--button-success-state-hover-bg);
-      border-color: var(--button-success-state-hover-border-color);
+      color: var(--button-success-hover-fg);
+      background: var(--button-success-hover-bg);
+      border-color: var(--button-success-hover-border-color);
     }
   }
 
   //-- Dangerous state --//
   &.sds-btn-danger:not([disabled]) {
-    color: var(--button-danger-state-fg);
-    background: var(--button-danger-state-bg);
-    border-color: var(--button-danger-state-border-color);
+    color: var(--button-danger-fg);
+    background: var(--button-danger-bg);
+    border-color: var(--button-danger-border-color);
     &:hover {
-      color: var(--button-danger-state-hover-fg);
-      background: var(--button-danger-state-hover-bg);
-      border-color: var(--button-danger-state-hover-border-color);
+      color: var(--button-danger-hover-fg);
+      background: var(--button-danger-hover-bg);
+      border-color: var(--button-danger-hover-border-color);
     }
   }
 
@@ -163,35 +164,39 @@
   }
 
   i {
-    width: 16px;
-    &.schoox {
-      font-size: 16px;
-      &.suffix-icon {
-        margin-left: 8px;
-      }
-    }
+    height: 1em;
+    width: 1em;
+
+    //   &.suffix-icon {
+    //     margin-right: 8px;
+    // }
+  }
+  
+  svg {
+    margin-right: 8px;
   }
 
   span {
-    line-height: 21px; // Setting a line height for all three states(normal|small|large) is experimental at the moment. This is done by the multi line fix.
+    align-items: center;
+    //line-height: 21px; // Setting a line height for all three states(normal|small|large) is experimental at the moment. This is done by the multi line fix.
     &:blank {
       display: none;
     }
-    display: inline-block;
+    display: inline-flex;
   }
 
   &.sds-btn-sm {
     font-size: 13px;
     i {
-      width: 12px;
-      font-size: 12px;
+      width: 16px;
+      height: 16px;
     }
   }
 
   &.sds-btn-lg {
     i {
-        width: 18px;
-        font-size: 18px;
+        width: 32px;
+        height: 32px;
     }
   }
 }
