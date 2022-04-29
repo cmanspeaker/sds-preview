@@ -54,23 +54,35 @@ copyFolderRecursiveSync('./schoox/', './dist/general');
 
 
 // read the file
-var content = (fs.readFileSync("./schoox/style.css")).toString();
+var content = (fs.readFileSync("./schoox/.style.css")).toString();
 
-const regex = /\.schoox-(.*?):/gm;
+const regex = /\.schoox-(.*?):before\{content:\"(.*?)\"}/gm;
 let m;
 let icons = [];
+let iconsContent = [];
 
 while ((m = regex.exec(content)) !== null) {
     if (m.index === regex.lastIndex) {
         regex.lastIndex++;
     }
     icons.push(m[1]);
+    iconsContent.push({id: m[1], code: m[2].substring(1)});
 }
 let file = `{
     "icons": ${JSON.stringify(icons)}
 }
 `
+let fileWithContent = `{
+    "icons": ${JSON.stringify(iconsContent)}
+}
+`
 fs.writeFile("./dist/general/icons.json", file, function(err) {
+    if(err) {
+        return console.log(err);
+    }
+    console.log("The file was saved!");
+});
+fs.writeFile("./dist/general/icons-content.json", fileWithContent, function(err) {
     if(err) {
         return console.log(err);
     }
