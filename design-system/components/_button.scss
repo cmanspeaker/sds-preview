@@ -9,21 +9,20 @@
     text-align: center;
     background-image: none;
     text-transform: uppercase;
-    border: 1px solid transparent;
-    box-shadow: var(--shadow-base);
-    letter-spacing: 0.5px;
+    // border: 1px solid transparent;
+    // box-shadow: var(--shadow-base);
+    // letter-spacing: 0.5px;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     -webkit-user-select: none;
     user-select: none;
     touch-action: manipulation;
     height: 32px;
-    padding: var(--spacer-8) var(--spacer-24);
     font-size: 14px;
     border-radius: var(--border-radius-sm);
     color: rgba(0, 0, 0, 0.85);
     background: var(--white);
-    border-color: var(--neutral-lightest);
+    // border-color: var(--neutral-lightest);
 }
 
 //-- Override button style --//
@@ -36,19 +35,21 @@
   height: auto; // We need this for multi line buttons.
 
   //-- Default state --//
-  &.sds-btn-default:not([disabled]) {
+  &.sds-btn-text:not([disabled]) {
+    padding: var(--spacer-4) var(--spacer-16);
     color: var(--button-default-fg);
     background: var(--button-default-bg);
-    border-color: var(--button-default-border-color);
+    // border-color: var(--button-default-border-color);
     &:hover {
       color: var(--button-default-hover-fg);
       background: var(--button-default-hover-bg);
-      border-color: var(--button-default-hover-border-color);
+      // border-color: var(--button-default-hover-border-color);
     }
   }
 
   //-- Primary State --//
   &.sds-btn-primary:not([disabled]) {
+    padding: var(--spacer-8) var(--spacer-24);
     color: var(--button-primary-fg);
     background: var(--button-primary-bg);
     border-color: var(--button-primary-border-color);

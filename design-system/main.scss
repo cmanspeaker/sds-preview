@@ -1,7 +1,11 @@
 // Import Global Styles
-@import "reset";
 @import "design-tokens";
+@import "reset";
 @import "components/button";
+
+.sds-btn:focus {
+    outline: 2px solid pink;
+}
 
 body {
     padding: 1rem;
