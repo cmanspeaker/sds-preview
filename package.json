@@ -22,5 +22,8 @@
     "fs": "0.0.1-security",
     "minify": "^7.0.1",
     "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "token-transformer": "^0.0.20"
   }
 }
