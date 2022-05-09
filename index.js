@@ -69,7 +69,7 @@ while ((m = regex.exec(content)) !== null) {
     }
     icons.push(m[1]);
     iconsContent.push({id: m[1], code: m[2].substring(1)});
-    iconsContent_iOS.push({id: m[1], code: '/u{'+m[2].substring(1)+'}'});
+    iconsContent_iOS.push({id: m[1], code: '\\u{'+m[2].substring(1)+'}'});
     iconsContent_android.push({id: m[1], code: '&#x'+m[2].substring(1)});
 }
 let file = `{
