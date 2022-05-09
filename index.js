@@ -68,9 +68,7 @@ while ((m = regex.exec(content)) !== null) {
         regex.lastIndex++;
     }
     icons.push(m[1]);
-    iconsContent.push({id: m[1], code: m[2].substring(1)});
-    iconsContent_iOS.push({id: m[1], code: '\\u{'+m[2].substring(1)+'}'});
-    iconsContent_android.push({id: m[1], code: '&#x'+m[2].substring(1)});
+    iconsContent.push({id: m[1], code: '&#x'+m[2].substring(1)});
 }
 let file = `{
     "icons": ${JSON.stringify(icons)}
@@ -80,14 +78,6 @@ let fileWithContent = `{
     "icons": ${JSON.stringify(iconsContent)}
 }
 `
-let fileWithContent_iOS = `{
-    "icons": ${JSON.stringify(iconsContent_iOS)}
-}
-`
-let fileWithContent_android = `{
-    "icons": ${JSON.stringify(iconsContent_android)}
-}
-`
 fs.writeFile("./dist/general/icons.json", file, function(err) {
     if(err) {
         return console.log(err);
@@ -95,18 +85,6 @@ fs.writeFile("./dist/general/icons.json", file, function(err) {
     console.log("The file was saved!");
 });
 fs.writeFile("./dist/general/icons-content.json", fileWithContent, function(err) {
-    if(err) {
-        return console.log(err);
-    }
-    console.log("The file was saved!");
-});
-fs.writeFile("./dist/general/icons-content-ios.json", fileWithContent_iOS, function(err) {
-    if(err) {
-        return console.log(err);
-    }
-    console.log("The file was saved!");
-});
-fs.writeFile("./dist/general/icons-content-android.json", fileWithContent_android, function(err) {
     if(err) {
         return console.log(err);
     }

@@ -11,5 +11,3 @@ Demo urls:
 <p>https://assets.schoox.com/general/schoox/demo.html</p>
 <p>https://assets.schoox.com/general/icons.json</p>
 <p>https://assets.schoox.com/general/icons-content.json</p>
-<p>https://assets.schoox.com/general/icons-content-android.json</p>
-<p>https://assets.schoox.com/general/icons-content-ios.json</p>
