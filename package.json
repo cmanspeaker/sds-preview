@@ -24,6 +24,7 @@
     "node-sass": "^7.0.1"
   },
   "dependencies": {
+    "style-dictionary": "^3.7.0",
     "token-transformer": "^0.0.21"
   }
 }
