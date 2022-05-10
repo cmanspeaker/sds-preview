@@ -24,6 +24,6 @@
     "node-sass": "^7.0.1"
   },
   "dependencies": {
-    "token-transformer": "^0.0.20"
+    "token-transformer": "^0.0.21"
   }
 }
