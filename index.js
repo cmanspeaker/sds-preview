@@ -45,14 +45,16 @@ function createFolder(dir){
 }
 
 createFolder('./dist');
+createFolder('./dist/sds');
 createFolder('./dist/icons');
 createFolder('./dist/general');
 createFolder('./dist/css');
 copyFileSync('./schoox/.style.css', './dist/icons/style.css');
-fs.unlinkSync('./schoox/.style.css');
+// fs.unlinkSync('./schoox/.style.css');
 copyFolderRecursiveSync('./schoox/fonts/', './dist/icons');
 copyFolderRecursiveSync('./images/', './dist');
 copyFolderRecursiveSync('./schoox/', './dist/general');
+copyFolderRecursiveSync('./design-system/build', './dist/sds');
 copyFileSync('./design-system/main.css', './dist/css/main.css');
 copyFileSync('./design-system/main.min.css', './dist/css/main.min.css');
 fs.unlinkSync('./design-system/main.css');
