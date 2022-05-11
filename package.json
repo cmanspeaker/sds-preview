@@ -6,7 +6,8 @@
   "scripts": {
     "build": "npm run design-system && npm run minify && node index.js",
     "minify": "minify schoox/style.css > schoox/.style.css && minify design-system/main.css > design-system/main.min.css",
-    "design-system": "node-sass design-system/main.scss design-system/main.css"
+    "design-system": "node-sass design-system/main.scss design-system/main.css",
+    "build-tokens": "cd design-system && style-dictionary build"
   },
   "repository": {
     "type": "git",
