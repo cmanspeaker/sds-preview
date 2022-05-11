@@ -3,6 +3,7 @@ schoox/cl-icons-font.css
 node_modules
 design-system/main.css
 design-system/main.min.css
+schoox/.style.css
 .vscode/
 dist/
 .DS_Store
