@@ -57,6 +57,7 @@ copyFolderRecursiveSync('./schoox/', './dist/general');
 copyFolderRecursiveSync('./design-system/build', './dist/sds');
 copyFileSync('./design-system/main.css', './dist/css/main.css');
 copyFileSync('./design-system/main.min.css', './dist/css/main.min.css');
+copyFileSync('./design-system/tokens.json', './dist/sds/tokens.json');
 fs.unlinkSync('./design-system/main.css');
 fs.unlinkSync('./design-system/main.min.css');
 

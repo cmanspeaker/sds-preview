@@ -14,3 +14,4 @@ Demo urls:
 <p>https://assets.schoox.com/general/icons.json</p>
 <p>https://assets.schoox.com/general/icons-content.json</p>
 <p>https://assets.schoox.com/sds/build/**/*</p>
+<p>https://assets.schoox.com/sds/tokens.json</p>
