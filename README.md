@@ -11,3 +11,5 @@ Demo urls:
 <p>https://assets.schoox.com/general/schoox/demo.html</p>
 <p>https://assets.schoox.com/css/main.css</p>
 <p>https://assets.schoox.com/css/main.min.css</p>
+<p>https://assets.schoox.com/general/icons.json</p>
+<p>https://assets.schoox.com/general/icons-content.json</p>
