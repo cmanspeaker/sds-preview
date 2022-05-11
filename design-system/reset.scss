@@ -25,8 +25,7 @@
 
   html {
     /* Load system fonts */
-    font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI,
-      Roboto, Helvetica Neue, sans-serif;
+    font-family: var(--sds-font-family);
   
     /* Make type rendering look crisper */
     -webkit-font-smoothing: antialiased;
