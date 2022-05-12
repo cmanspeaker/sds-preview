@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'schoox';
-  src:  url('fonts/schoox.eot?jiqu78');
-  src:  url('fonts/schoox.eot?jiqu78#iefix') format('embedded-opentype'),
-    url('fonts/schoox.woff2?jiqu78') format('woff2'),
-    url('fonts/schoox.ttf?jiqu78') format('truetype'),
-    url('fonts/schoox.woff?jiqu78') format('woff'),
-    url('fonts/schoox.svg?jiqu78#schoox') format('svg');
+  src:  url('fonts/schoox.eot?htb468');
+  src:  url('fonts/schoox.eot?htb468#iefix') format('embedded-opentype'),
+    url('fonts/schoox.woff2?htb468') format('woff2'),
+    url('fonts/schoox.ttf?htb468') format('truetype'),
+    url('fonts/schoox.woff?htb468') format('woff'),
+    url('fonts/schoox.svg?htb468#schoox') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.schoox-move_to:before {
+  content: "\ea3e";
+}
 .schoox-image:before {
   content: "\ea3b";
 }
