@@ -1,5 +1,9 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="schoox-move_to" viewBox="0 0 64 64">
+<path d="M47.2 30.2l-1.4-4.4-12.2 0.2-2-3.2-4 0.2 5.4 5 10.6-0.2 1 2.6-9 1.6-16.2 15.2-2.6 7-5-15.2h-3.2l6.4 18h0.4v0.2l34-7 11.8-21.4z"></path>
+<path d="M15.6 45.8l16.6-15.4-16.6-15v9h-12v12h12z"></path>
+</symbol>
 <symbol id="schoox-image" viewBox="0 0 64 64">
 <path d="M54.2 17h-35.2v-4h-8v4h-1.2c-2.6 0-4.8 2.2-4.8 4.8v24.6c0 2.6 2.2 4.8 4.8 4.8h44.4c2.6 0 4.8-2.2 4.8-4.8v-24.6c0-2.8-2-4.8-4.8-4.8zM34.2 49c-8.2 0-15-6.8-15-15s6.6-15 15-15c8.2 0 15 6.8 15 15-0.2 8.2-6.8 15-15 15zM34.2 23c-6 0-10.8 4.8-10.8 10.8s4.8 10.8 10.8 10.8c6 0 10.8-4.8 10.8-10.8 0-5.8-4.8-10.8-10.8-10.8z"></path>
 </symbol>
