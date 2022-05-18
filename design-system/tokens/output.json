@@ -10,27 +10,27 @@
       "primary": {
         "filled": {
           "bg": {
-            "value": "#007cb2",
+            "value": "#7334b1",
             "type": "color"
           },
           "fg": {
-            "value": "#ccebf9",
+            "value": "#ebdef7",
             "type": "color"
           }
         },
         "tonal": {
           "bg": {
-            "value": "#ccebf9",
+            "value": "#d9c2f0",
             "type": "color"
           },
           "fg": {
-            "value": "#007cb2",
+            "value": "#7334b1",
             "type": "color"
           }
         },
         "ghost": {
           "fg": {
-            "value": "#007cb2",
+            "value": "#7334b1",
             "type": "color"
           }
         }
@@ -38,27 +38,27 @@
       "secondary": {
         "filled": {
           "bg": {
-            "value": "#7d7e82",
+            "value": "#666699",
             "type": "color"
           },
           "fg": {
-            "value": "#f2f2f3",
+            "value": "#f0f0f4",
             "type": "color"
           }
         },
         "tonal": {
           "bg": {
-            "value": "#d8d9d9",
+            "value": "#d1d1e0",
             "type": "color"
           },
           "fg": {
-            "value": "#7d7e82",
+            "value": "#666699",
             "type": "color"
           }
         },
         "ghost": {
           "fg": {
-            "value": "#7d7e82",
+            "value": "#666699",
             "type": "color"
           }
         }
@@ -66,7 +66,7 @@
     },
     "fg": {
       "default": {
-        "value": "#000000",
+        "value": "#151537",
         "type": "color"
       }
     }
