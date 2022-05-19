@@ -3,6 +3,7 @@
   "platforms": {
     "css": {
       "transformGroup": "css",
+      "prefix": "sds",
       "buildPath": "build/css/",
       "files": [
         {
