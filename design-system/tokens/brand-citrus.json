@@ -1,0 +1,82 @@
+{
+  "theme": {
+    "bg": {
+      "default": {
+        "value": "#ffffff",
+        "type": "color"
+      }
+    },
+    "button": {
+      "primary": {
+        "filled": {
+          "bg": {
+            "value": "#007cb2",
+            "type": "color"
+          },
+          "fg": {
+            "value": "#ccebf9",
+            "type": "color"
+          }
+        },
+        "tonal": {
+          "bg": {
+            "value": "#ccebf9",
+            "type": "color"
+          },
+          "fg": {
+            "value": "#007cb2",
+            "type": "color"
+          }
+        },
+        "ghost": {
+          "fg": {
+            "value": "#007cb2",
+            "type": "color"
+          },
+          "bg": {
+            "value": "#00000000",
+            "type": "color"
+          }
+        }
+      },
+      "secondary": {
+        "filled": {
+          "bg": {
+            "value": "#7d7e82",
+            "type": "color"
+          },
+          "fg": {
+            "value": "#f2f2f3",
+            "type": "color"
+          }
+        },
+        "tonal": {
+          "bg": {
+            "value": "#d8d9d9",
+            "type": "color"
+          },
+          "fg": {
+            "value": "#7d7e82",
+            "type": "color"
+          }
+        },
+        "ghost": {
+          "fg": {
+            "value": "#7d7e82",
+            "type": "color"
+          },
+          "bg": {
+            "value": "#00000000",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "fg": {
+      "default": {
+        "value": "#000000",
+        "type": "color"
+      }
+    }
+  }
+}
