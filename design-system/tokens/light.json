@@ -63,7 +63,8 @@
         "ghost": {
           "fg": {
             "value": "#666699",
-            "type": "color"
+            "type": "color",
+            "description": "Text color for secondary ghost buttons"
           },
           "bg": {
             "value": "#00000000",
