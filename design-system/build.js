@@ -11,6 +11,26 @@ StyleDictionaryPackage.registerFormat({
     }
   });  
 
+  StyleDictionaryPackage.registerTransform({
+    name: 'shadow/css',
+    type: 'value',
+    // necessary in case the color is an alias reference, or the shadows themselves are aliased
+    transitive: true,
+    matcher: (token) => token.type === 'boxShadow',
+    transformer: (token) => {
+      // allow both single and multi shadow tokens
+      const shadow = Array.isArray(token.value) ? token.value : [token.value];
+  
+      const value = shadow.map((s) => {
+        const { x, y, blur, color, type } = s;
+        // support inset shadows as well
+        return `${type === 'innerShadow' ? 'inset ' : ''}${x}px ${y}px ${blur}px ${color}`;
+      });
+  
+      return value.join(', ');
+    },
+  });
+
 StyleDictionaryPackage.registerTransform({
     name: 'sizes/px',
     type: 'value',
@@ -31,7 +51,7 @@ function getStyleDictionaryConfig(theme) {
     ],
     "platforms": {
       "web": {
-        "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px"],
+        "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px","shadow/css"],
         "buildPath": `build/css/`,
         "prefix": `sds`,
         "files": [{
