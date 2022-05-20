@@ -17,6 +17,60 @@
       "type": "fontFamilies"
     }
   },
+  "font-size": {
+    "11": {
+      "value": 11,
+      "type": "fontSizes"
+    },
+    "12": {
+      "value": 12,
+      "type": "fontSizes"
+    },
+    "14": {
+      "value": 14,
+      "type": "fontSizes"
+    },
+    "16": {
+      "value": 16,
+      "type": "fontSizes"
+    },
+    "20": {
+      "value": 20,
+      "type": "fontSizes"
+    },
+    "24": {
+      "value": 24,
+      "type": "fontSizes"
+    },
+    "28": {
+      "value": 28,
+      "type": "fontSizes"
+    },
+    "32": {
+      "value": 32,
+      "type": "fontSizes"
+    },
+    "36": {
+      "value": 36,
+      "type": "fontSizes"
+    },
+    "48": {
+      "value": 48,
+      "type": "fontSizes"
+    },
+    "64": {
+      "value": 64,
+      "type": "fontSizes"
+    },
+    "80": {
+      "value": 80,
+      "type": "fontSizes"
+    },
+    "96": {
+      "value": 96,
+      "type": "fontSizes"
+    }
+  },
   "letter-spacing": {
     "tight": {
       "value": -0.5,
