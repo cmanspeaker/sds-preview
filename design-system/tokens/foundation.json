@@ -15,6 +15,11 @@
     "windows": {
       "value": "Segoe UI",
       "type": "fontFamilies"
+    },
+    "web": {
+      "value": "-apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif",
+      "type": "fontFamilies",
+      "description": "This font-stack makes sure all browsers can load platform-specific fonts"
     }
   },
   "font-size": {
