@@ -7,7 +7,7 @@
     "build": "npm run design-system && npm run minify && npm run build-tokens && node index.js",
     "minify": "minify schoox/style.css > schoox/.style.css && minify design-system/main.css > design-system/main.min.css",
     "design-system": "node-sass design-system/main.scss design-system/main.css",
-    "build-tokens": "cd design-system && node build.js"
+    "build-tokens": "cd design-system && npx token-transformer tokens.json tokens/foundation.json foundation && npx token-transformer tokens.json tokens/brand-citrus.json foundation,brand-citrus foundation && npx token-transformer tokens.json tokens/light.json foundation,light foundation && node build.js"
   },
   "repository": {
     "type": "git",
