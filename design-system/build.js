@@ -59,7 +59,17 @@ function getStyleDictionaryConfig(theme) {
             "format": "css/variables",
             "selector": `.${theme}-theme`
           }]
-      }
+      },
+      "scss": {
+        "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px","shadow/css"],
+        "buildPath": `build/scss/`,
+        "prefix": `sds`,
+        "files": [{
+          "destination": `${theme}.scss`,
+          "format": "scss/variables",
+          "selector": `.${theme}-theme`
+        }]
+      },
     }
   };
 }
@@ -76,6 +86,7 @@ console.log('Build started...');
     const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme));
 
     StyleDictionary.buildPlatform('web');
+    StyleDictionary.buildPlatform('scss');
 
     console.log('\nEnd processing');
 })
