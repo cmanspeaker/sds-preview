@@ -22,6 +22,20 @@
       "description": "This font-stack makes sure all browsers can load platform-specific fonts"
     }
   },
+  "font-weight": {
+    "bold": {
+      "value": "Bold",
+      "type": "fontWeights"
+    },
+    "normal": {
+      "value": "Regular",
+      "type": "fontWeights"
+    },
+    "light": {
+      "value": "Light",
+      "type": "fontWeights"
+    }
+  },
   "font-size": {
     "11": {
       "value": 11,
