@@ -1,28 +1,22 @@
 //-- QUESTION Import the button style --//
 // @import "../../../../style/cl-base-button.min";
 .sds-btn {
-    line-height: 1.5715;
+    line-height: var(--sds-line-height-14);
     position: relative;
     display: inline-block;
-    font-weight: bold;
+    font-weight: 700;
     white-space: nowrap;
     text-align: center;
     background-image: none;
-    text-transform: uppercase;
-    // border: 1px solid transparent;
-    // box-shadow: var(--shadow-base);
-    // letter-spacing: 0.5px;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     -webkit-user-select: none;
     user-select: none;
     touch-action: manipulation;
-    height: 32px;
-    font-size: 14px;
-    border-radius: var(--border-radius-sm);
-    color: rgba(0, 0, 0, 0.85);
-    background: var(--white);
-    // border-color: var(--neutral-lightest);
+    font-size: var(--sds-font-size-14);
+    border-radius: var(--sds-br-4);
+    color: var(--sds-theme-button-primary-filled-fg);
+    background: var(--sds-theme-button-primary-filled-bg);
 }
 
 //-- Override button style --//
