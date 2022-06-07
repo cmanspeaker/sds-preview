@@ -77,6 +77,78 @@
         "value": "#000000",
         "type": "color"
       }
+    },
+    "alert": {
+      "success": {
+        "bg": {
+          "value": "#eaf7cc",
+          "type": "color"
+        },
+        "border": {
+          "value": "#76ab00",
+          "type": "color"
+        },
+        "fg": {
+          "value": "#3b5600",
+          "type": "color"
+        }
+      },
+      "info": {
+        "bg": {
+          "value": "#ccebf9",
+          "type": "color"
+        },
+        "border": {
+          "value": "#007cb2",
+          "type": "color"
+        },
+        "fg": {
+          "value": "#003e59",
+          "type": "color"
+        }
+      },
+      "error": {
+        "bg": {
+          "value": "#ffdede",
+          "type": "color"
+        },
+        "border": {
+          "value": "#cc4a4a",
+          "type": "color"
+        },
+        "fg": {
+          "value": "#662525",
+          "type": "color"
+        }
+      },
+      "warning": {
+        "bg": {
+          "value": "#fcfdcc",
+          "type": "color"
+        },
+        "border": {
+          "value": "#c0c400",
+          "type": "color"
+        },
+        "fg": {
+          "value": "#606200",
+          "type": "color"
+        }
+      },
+      "default": {
+        "bg": {
+          "value": "#f2f2f3",
+          "type": "color"
+        },
+        "border": {
+          "value": "#7d7e82",
+          "type": "color"
+        },
+        "fg": {
+          "value": "#404040",
+          "type": "color"
+        }
+      }
     }
   }
 }
